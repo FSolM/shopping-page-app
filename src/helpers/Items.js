@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 import '../assets/css/items.css';
 
@@ -7,6 +8,24 @@ const Items = (props) => {
   const [svgSrc] = useState(props.svgSrc);
   const [description] = useState(props.description);
   const [price] = useState(props.price);
+  const [dispatchUrl] = useState(props.dispatchUrl);
+
+  const handleDispatch = (url) => {
+    axios.post(url)
+      .then((response) => {
+        return response.data;
+      })
+      .then((data) => {
+        if (data.status) {
+          console.log(`${name} transaction completed`);
+        } else {
+          console.error(`There was an error while trying to update ${name}`);
+        }
+      })
+      .catch((error) => {
+        console.error(`Connection failed for ${name}: ${error}`);
+      });
+  }
 
   return (
     <div className="item">
@@ -22,7 +41,7 @@ const Items = (props) => {
         </div>
 
         <div className="actions">
-          <div className="add-button">Add to Cart</div>
+          <div onClick={() => handleDispatch(dispatchUrl)} className="add-button">Add to Cart</div>
         </div>
       </div>
     </div>
