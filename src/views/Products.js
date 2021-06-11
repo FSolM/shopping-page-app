@@ -18,6 +18,7 @@ const Products = () => (
         svgSrc={tshirt}
         description="Just cover yourself with this nice plain old shirt"
         price="$20.00"
+        dispatchUrl="http://localhost:3001/api/cart/shirt/add"
       />
 
       <Items
@@ -25,13 +26,15 @@ const Products = () => (
         svgSrc={pen}
         description="For all your writing necessities"
         price="$5.00"
+        dispatchUrl="http://localhost:3001/api/cart/pen/add"
       />
 
       <Items
-        name="Cup"
+        name="Mug"
         svgSrc={cup}
         description="You can either use it for coffee or ice cream"
         price="$7.50"
+        dispatchUrl="http://localhost:3001/api/cart/mug/add"
       />
     </div>
   </div>
