@@ -1,0 +1,48 @@
+div.item {
+  background-color: inherit;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+div.item > .content {
+  border-radius: inherit;
+  padding: 10px 5px;
+}
+
+div.item > .content > .item-image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+div.item > .content > .item-image > img {
+  height: 60px;
+  width: 60px;
+}
+
+div.item > .content > .item-metadata { padding: 10px 25px; }
+
+div.item > .content > .item-metadata > div {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+div.item > .content > .item-metadata > div:last-child { padding-bottom: 0; }
+
+div.item > .content > .item-metadata > .name { font-weight: 700; }
+
+div.item > .content > .item-metadata > .price { text-align: right; }
+
+div.item > .content > .actions { padding: 15px 5px; }
+
+div.item > .content > .actions > .add-button {
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+div.item > .content > .actions > .add-button:hover {
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
