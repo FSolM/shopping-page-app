@@ -1,0 +1,19 @@
+div.cart-item {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+div.cart-item > .name { width: 40% }
+
+div.cart-item > .quantity { width: 40%; }
+
+div.cart-item > div:last-child {
+  color: #b40000;
+  width: 20%;
+}
+
+div.cart-item > div:last-child:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
