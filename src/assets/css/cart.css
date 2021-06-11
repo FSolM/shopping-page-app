@@ -9,7 +9,7 @@ div.cart > .cart-container {
   border: 1px solid #f7f7f7;
   display: flex;
   flex-direction: column;
-  height: 360px;
+  height: 225px;
   margin-right: 10px;
   margin-top: 24px;
   position: absolute;
@@ -26,4 +26,17 @@ div.cart > .cart-container > .title {
 div.cart > .cart-container > .contents {
   overflow-y: scroll;
   padding: 15px;
+}
+
+div.cart > .cart-container > .total {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+div.cart > .cart-container > .total > div:nth-child(1) { color: #b40000; }
+
+div.cart > .cart-container > .total > div:nth-child(1):hover {
+  cursor: pointer;
+  font-weight: 700;
 }
