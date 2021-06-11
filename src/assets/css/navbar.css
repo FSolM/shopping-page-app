@@ -1,0 +1,38 @@
+div.navbar {
+  display: flex;
+  height: 60px;
+  padding: 15px 0;
+  width: 100%;
+}
+
+div.navbar > * { height: 100%; }
+
+div.navbar > .logo,
+div.navbar > .icons {
+  align-items: center;
+  display: flex;
+}
+
+div.navbar > .logo {
+  justify-content: center;
+  width: 120px;
+}
+
+div.navbar > .logo > a {
+  height: 50px;
+  width: 50px;
+}
+
+div.navbar > .logo > a > img {
+  height: 100%;
+  width: 100%;
+}
+
+div.navbar > .logo > a > img:hover { cursor: pointer; }
+
+div.navbar > .icons {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+div.navbar > .icons > div { width: 80px; }
