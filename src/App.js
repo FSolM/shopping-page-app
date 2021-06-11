@@ -1,9 +1,11 @@
+import Home from './layout/Home';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      React app!
+      <Home />
     </div>
   );
 }
